@@ -21,6 +21,25 @@ function fileExists(pathSegments: string[]): string {
   return matchedNode?.address || "";
 }
 
+export async function generateStaticParams() {
+  const params: { slug: string[] }[] = [];
+
+  function traverse(node: FileNode, path: string[]) {
+    params.push({ slug: [...path, node.name] });
+    if (node.children) {
+      for (const child of node.children) {
+        traverse(child, [...path, node.name]);
+      }
+    }
+  }
+
+  for (const node of filesTree) {
+    traverse(node, []);
+  }
+
+  return params;
+}
+
 export default async function Page(props: {
   params: Promise<{ slug: string[] }>
 }) {
