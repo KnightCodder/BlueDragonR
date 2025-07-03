@@ -1,15 +1,1 @@
-# Move Generation Module
-
-This module handles all move generation logic for the BlueDragonR chess engine.
-
-## ✅ Features Implemented
-
-- Legal move generation for all pieces
-- Castling logic
-- En passant detection
-- Pawn promotions
-- Move legality checks (no king in check)
-
-## 📁 File Structure
-
-
+going to create chess engine here, at first the engine will be very basic but in later version i will include advance features like bitboards, ML.

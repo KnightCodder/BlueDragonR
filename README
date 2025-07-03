@@ -1,0 +1,45 @@
+# BlueDragonR ♟️🔥
+
+**BlueDragonR** is a custom-built chess engine developed in C++, paired with a dynamic documentation and analysis website built using Next.js. The project reflects years of learning, experimentation, and deep interest in chess programming, AI, and full-stack development.
+
+---
+
+## 🧠 What is this?
+
+This repository contains:
+- A **chess engine** written from scratch in C++ with UCI (Universal Chess Interface) support
+- A **web-based platform** to:
+  - View the engine’s source code and documentation
+  - Play and analyze chess games using BlueDragonR
+  - Download and test the engine locally
+  - Track development progress and benchmarks
+
+---
+
+## 🚀 Features
+
+- Robust move generation and search algorithms
+- UCI-compliant interface for compatibility with GUIs (like Arena, CuteChess, etc.)
+- Embedded testing and benchmarking framework (Makefile-based)
+- Easy-to-navigate documentation system powered by MDX
+- A beautiful and responsive web UI with:
+  - Sidebar navigation
+  - Blog & updates section
+  - Online play and analysis
+
+---
+
+## 🛠️ Tech Stack
+
+### Chess Engine:
+- C++17
+- Makefiles
+- Manual memory & performance tuning
+- Planned: Bitboards, ML-based evaluation
+
+### Website:
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- Markdown (MDX) for docs
+- GitHub + Vercel for CI/CD and hosting
